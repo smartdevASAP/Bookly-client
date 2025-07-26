@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* setting theme */
+
+@theme {
+  --color-primary: #2427e6;
+  /* --color-primary-dull: #44ae7c; */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) linear infinite;
+}
