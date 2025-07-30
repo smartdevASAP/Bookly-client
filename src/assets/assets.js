@@ -4,9 +4,26 @@ import ebooks from "./ebooks.jpg";
 import history from "./history.jpg";
 import kids from "./kids.jpg";
 import novels from "./novels.jpg";
+import objects from "./objects.svg";
+import charity from "./charity.png";
+import dropdown from "./dropdown.png";
+import notification from "./notification.svg";
+import dash from "./dash.png";
+import chat from "./chat.png";
+import add from "./add.png";
+import collectionsIMG from "./collectionsIMG.png";
+import profile from "./profile.png";
+import phone from "./phone.png";
+import wallet from "./wallet.png";
 export const assets = {
   logo,
   pana,
+  objects,
+  charity,
+  dropdown,
+  notification,
+  dash,
+  chat,
 };
 
 export const categories = [
@@ -50,5 +67,33 @@ export const about = [
     title: "Community",
     info: "Bookly isn’t just a system; it’s a space where readers, librarians, and ideas connect. Through shared collections, updates, and reading resources, we bring people together through the power of books.",
     btn_txt: "Learn More",
+  },
+];
+
+export const userCard = [
+  {
+    _id: 1,
+    img: add,
+    text: "Collections",
+  },
+  {
+    _id: 2,
+    img: collectionsIMG,
+    text: "Collections",
+  },
+  {
+    _id: 3,
+    img: profile,
+    text: "profile",
+  },
+  {
+    _id: 4,
+    img: phone,
+    text: "notifications",
+  },
+  {
+    _id: 5,
+    img: wallet,
+    text: "wallet",
   },
 ];

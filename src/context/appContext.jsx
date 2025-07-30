@@ -7,10 +7,13 @@ export const AppContext = createContext();
 export const AppContextProvider = ({ children }) => {
   //declaring all global functions to be accessed nby all components accress the app;
   const [state, setState] = useState(null);
+  const [isUserStarted, setIsUserStarted] = useState(false);
 
   const value = {
     state,
     setState,
+    isUserStarted,
+    setIsUserStarted,
   };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };

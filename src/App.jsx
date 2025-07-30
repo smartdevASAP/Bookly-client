@@ -1,9 +1,9 @@
 import React from "react";
 import LandingPage from "./pages/landingPage/landingPage";
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/login/login";
-
+import Login from "./pages/login/login.jsx";
 import Footer from "./components/footer";
+import UserDashBoard from "./dashboards/user/userDashLayout.jsx";
 
 function App() {
   return (
@@ -12,8 +12,10 @@ function App() {
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/user/dashboard/*" element={<UserDashBoard />} />{" "}
         </Routes>
       </div>
+      {/* <Footer /> */}
     </>
   );
 }
